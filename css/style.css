@@ -42,6 +42,10 @@ h6,
     margin-right: 10px;
 }
 
+.itemsContact{
+    margin-top: 10px;
+}
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
