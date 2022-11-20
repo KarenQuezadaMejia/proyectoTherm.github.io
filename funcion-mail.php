@@ -1,6 +1,6 @@
 <?php
 if($_SERVER['REQUEST_METHOD'] != 'POST' ){
-    header("Location: formCont.html" );
+    header("Location: contact.html" );
 }
 
 
@@ -48,4 +48,4 @@ $rta = mail('jmquezadam95@gmail.com', "Mensaje web: $asunto", $body, $headers );
 var_dump($rta);
 */
 
-header("Location: formCont.html" );
+header("Location: index.html" );

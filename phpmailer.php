@@ -1,24 +1,18 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] != 'POST' ){
-    header("Location: formCont.html" );
-}
 
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/Exception.php';
+$destinatario = 'jmquezadam95@gmail.com';
 
-use PHPMailer\PHPMailer\PHPMailer;
-
-$nombre = $_POST['nombre'];
+$nombre = $_POST['name'];
 $tel = $_POST['tel'];
 $email = $_POST['email'];
-$asunto = $_POST['asunto'];
-$mensaje = $_POST['mensaje'];
-$foto = $_FILES['foto']; //array assoc - $foto['tmp_name']; $foto['size'] - $foto['name']
+$asunto = $_POST['opcion'];
+$mensaje = $_POST['message'];
+$foto = $_FILES['img']; //array assoc - $foto['tmp_name']; $foto['size'] - $foto['name']
 
 if( empty(trim($nombre)) ) $nombre = 'anonimo';
 if( empty(trim($apellido)) ) $tel = '';
 
-$body = <<<HTML
+/*$body = <<<HTML
     <h1>Contacto desde la web</h1>
     <p>De: $nombre $tel / $email</p>
     <h2>Mensaje</h2>
@@ -26,7 +20,7 @@ $body = <<<HTML
 HTML;
 
 $mailer = new PHPMailer();
-$mailer->setFrom( $email, "$nombre $tel" );
+$mailer->setFrom( $email, "$nombre $tel " );
 $mailer->addAddress('jmquezadam95@gmail.com','Sitio web');
 $mailer->Subject = "Mensaje web: $asunto";
 $mailer->msgHTML($body);
@@ -40,4 +34,12 @@ if( $foto['size'] > 0 ){
 $rta = $mailer->send( );
 
 //var_dump($rta);
-header("Location: formCont.html" );
+header("Location: index.html" );
+*/
+$header = "Enviado desde pagina web"
+	$mensajeCompleto = $mensaje . "\nAtentamente: " . $nombre;
+
+	mail($destinatario, $asunto, $tel);
+	echo "<script>alert('correo enviado existosamente')</script>";
+	echo "<script> setTimeout(\"location.href='index.html'\",100)</script>";
+?>
