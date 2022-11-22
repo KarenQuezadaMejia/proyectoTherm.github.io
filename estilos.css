@@ -51,6 +51,13 @@ form > div.large,
 form h2{
     width: 100%;
 }
+form-control:disabled, .form-control:read-only {
+    background-color: #ffffff !important;
+    opacity: 1;
+}
+input[type="file"] {
+    display: none;
+}
 
 input,
 select,
@@ -70,6 +77,10 @@ button{
     border: none;
     outline: none;
 }
+
+#habitissimo-habitissimo_comments{
+   width: auto !important;
+   justify-content: start;}
 
 
 

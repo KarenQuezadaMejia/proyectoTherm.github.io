@@ -1,4 +1,3 @@
-/********** Template CSS **********/
 :root {
     --primary: #D8563C;
     --light: #F5F5F5;
@@ -38,8 +37,8 @@ h6,
 }
 
 .wsp{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 4px;
+    margin-right: 0px;
 }
 
 .itemsContact{
@@ -65,6 +64,9 @@ h6,
 .btn {
     transition: .5s;
     font-weight: 500;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-primary,
@@ -119,6 +121,8 @@ h6,
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
+    background-color: #0B447E !important;
+    color: #FFFFFF !important;
 }
 
 .navbar .navbar-brand {
@@ -389,7 +393,7 @@ h6,
 }
 
 .service-item .service-detail {
-    position: absolute;
+    
     width: 100%;
     height: 100%;
     top: 0;
@@ -413,68 +417,6 @@ h6,
     background: #FFFFFF;
     transition: .5s;
 }
-
-.service-item:hover .service-title {
-    top: -100%;
-}
-
-.service-item .service-text {
-    position: absolute;
-    overflow: hidden;
-    padding: 65px 30px 25px 30px;
-    width: 100%;
-    height: 100%;
-    top: 100%;
-    left: 0;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background: rgba(2, 36, 91, .7);
-    transition: .5s;
-}
-
-.service-item:hover .service-text {
-    top: 0;
-}
-
-.service-item .service-text::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100px;
-    top: -100%;
-    left: 0;
-    transform: skewY(-12deg);
-    background: #FFFFFF;
-    transition: .5s;
-}
-
-.service-item:hover .service-text::before {
-    top: -55px;
-}
-
-.service-item .btn {
-    position: absolute;
-    width: 130px;
-    height: 50px;
-    left: 50%;
-    bottom: -25px;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--secondary);
-    background: #FFFFFF;
-    border: none;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .09);
-    z-index: 2;
-}
-
-.service-item .btn:hover {
-    color: #FFFFFF;
-    background: var(--primary);
-}
-
 
 /*** Project ***/
 .project-carousel {
