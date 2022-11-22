@@ -121,6 +121,8 @@ h6,
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
+    background-color: #0B447E !important;
+    color: #FFFFFF !important;
 }
 
 .navbar .navbar-brand {
