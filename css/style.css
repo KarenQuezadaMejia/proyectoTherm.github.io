@@ -19,6 +19,9 @@ h2,
 .fw-bold {
     font-weight: 700 !important;
 }
+#title{
+    font-size: 20px;
+}
 
 h3,
 h4,
@@ -121,12 +124,12 @@ h6,
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
-    background-color: #0B447E !important;
+    
 }
 
 .navbar .navbar-brand {
     position: relative;
-    padding-right: 50px;
+    padding-right: 30px;
     height: 75px;
     display: flex;
     align-items: center;
@@ -136,12 +139,21 @@ h6,
 .navbar .navbar-brand::after {
     position: absolute;
     content: "";
+    margin-right: 13px;
+    width: 30px;
+    height: 100%;
+    top: 0;
+    right: -30px;
+    transform: skewX(-20deg);
+    background-color: var(--dark);
+    /* position: absolute;
+    content: "";
     width: 50px;
     height: 100%;
     top: 0;
     right: -25px;
     transform: skewX(-30deg);
-    background-color: var(--dark);
+    background-color: var(--dark); */
 }
 
 .navbar .navbar-nav .nav-link {
@@ -376,23 +388,23 @@ h6,
     position: relative;
     margin: 65px 0 25px 0;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    background-color: #FFFFFF;
 }
 
 .service-item .service-img {
     position: absolute;
-    padding: 12px;
-    width: 130px;
-    height: 130px;
-    top: -65px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    top: -95px;
     left: 50%;
     transform: translateX(-50%);
     background: #FFFFFF;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .09);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .09);
     z-index: 2;
 }
 
-.service-item .service-detail {
-    
+.service-item .service-detail {  
     width: 100%;
     height: 100%;
     top: 0;
@@ -401,11 +413,18 @@ h6,
     z-index: 1;
 }
 
+.sectionService{
+    background-color: #FFFFFF;
+
+}
 .service-item .service-title {
     position: absolute;
-    padding: 65px 30px 25px 30px;
+    padding: 30px 8px 30p !important;
+    margin-top: 10px;
     width: 100%;
-    height: 100%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
     top: 0;
     left: 0;
     display: flex;
@@ -415,6 +434,20 @@ h6,
     text-align: center;
     background: #FFFFFF;
     transition: .5s;
+}
+.service-item .service-text {
+    margin: 0;
+    margin-top: -14px;
+    padding: 0;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #FFFFFF;
+    transition: .5s;
+}
+.phone-text{
+    font-size: 12px !important;
 }
 
 /*** Project ***/
@@ -503,6 +536,12 @@ h6,
 }
 
 
+.text-contact{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px !important;
+}
 /*** Team ***/
 .team-item .team-social {
     position: absolute;
