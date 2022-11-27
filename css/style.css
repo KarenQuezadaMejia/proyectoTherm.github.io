@@ -4,12 +4,27 @@
     --dark: #0B447E;
 }
 
-.back-to-top {
+.chat-ws {
     position: fixed;
     display: none;
+    justify-content: center;
     right: 30px;
     bottom: 30px;
     z-index: 99;
+    padding: 0;
+    background-color: green;
+    border-color: green;
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+    padding: 0;
+    background-color: green;
+    border-color: green;
 }
 
 h1,
